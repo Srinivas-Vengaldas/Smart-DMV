@@ -23,8 +23,8 @@ ocr:
 
 extraction:
   patterns:
-    landlord: "by and between\\s+(.+?)\\s*,?\\s*as Agent"
-    agent: "Agent[\"']?\\)?\\s*and\\s+(.+?)\\s*\\("
+    agent: "by and between[\\s_]+([A-Za-z\\s]+?)[\\s_]*,?\\s*as Agent"
+    tenant: "Agent[\"']?\\)?[\\s_]*and[\\s_]+([A-Za-z\\s]+?)[\\s_]*\\("
     address: "premises known as\\s+(.+?)\\s*\\(the"
     term: "term of\\s+(.+?)\\s*beginning"
     start_date: "first day of\\s+(.+?)\\s"
