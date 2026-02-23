@@ -1,0 +1,10 @@
+Faker
+pandas
+opencv-python
+numpy
+Pillow
+PyYAML
+fastapi
+uvicorn
+psycopg2-binary
+streamlit
