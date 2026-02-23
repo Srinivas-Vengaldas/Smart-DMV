@@ -30,8 +30,7 @@ extraction:
     start_date: "first day of\\s+(.+?)\\s"
     end_date: "last day of\\s+(.+?)\\s*\\(the"
     monthly_rent: "installments of \\$\\s*([\\d,]+)"
-    late_fee: "(\\w+ percent \\(\\d+%\\))"
-    service_charge: "\\$([\\d.]+)\\s*will be automatically"
+    
 
 signature:
   region_of_interest:          
