@@ -14,13 +14,13 @@
 1. Connect your repo (e.g. GitHub).
 2. **Build command:** `pip install -r requirements.txt`
 3. **Start command:** `uvicorn api:app --host 0.0.0.0 --port $PORT`
-4. **Root directory:** `lease_extraction` (if the app lives in a subfolder of the repo).
+4. **Root directory:** `services/ocr`.
 5. **Environment:** Add `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True`.
 6. **Instance:** Prefer 2 GB RAM (Starter or Standard).
 
 ### Option B: render.yaml
 
-If your repo root is the `lease_extraction` folder (or you run from it), you can use the included `render.yaml` and deploy from the Render dashboard with “New Blueprint”.
+Set the root directory to `services/ocr` and use the included `render.yaml` and deploy from the Render dashboard with “New Blueprint”.
 
 ## 3. API usage (for your frontend)
 

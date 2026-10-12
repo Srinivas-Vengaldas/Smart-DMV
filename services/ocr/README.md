@@ -5,7 +5,7 @@ Extracts structured fields from GCAAR DC Residential Lease images (page **p1** o
 ## Setup
 
 ```bash
-cd SERVICES/OCR
+cd services/ocr
 pip install -r requirements.txt
 ```
 
