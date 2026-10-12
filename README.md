@@ -13,8 +13,8 @@ Built as a team project at George Washington University.
 
 | Member | Built |
 |---|---|
-| [Srinivas Vengaldas](https://github.com/Srinivas-Vengaldas) | Synthetic applicant and lease dataset generator (`tools/synthetic-data`), PaddleOCR lease-extraction API (`services/ocr`) <!-- add the web portal pages and API routes you built --> |
-| [Enoch Eugene Saka](https://github.com/EnochSakaEugene) | Web portal (`apps/web`): auth, application forms, document upload, staff and admin dashboards, appointments, Google Vision OCR, Gemini staff assistant |
+| [Srinivas Vengaldas](https://github.com/Srinivas-Vengaldas) | Synthetic applicant and lease dataset generator (`tools/synthetic-data`), PaddleOCR lease-extraction API (`services/ocr`), and, with Enoch, the AI verification agent and Gemini staff assistant in the portal |
+| [Enoch Eugene Saka](https://github.com/EnochSakaEugene) | Web portal (`apps/web`): auth, application forms, document upload, staff and admin dashboards, appointments, Google Vision OCR, AI verification agent and Gemini staff assistant (with Srinivas) |
 | [Akshit Reddy Palle](https://github.com/AkshitReddyPalle) | Streamlit image-quality checker (`tools/quality-check`) |
 
 The team developed the web portal together and deployed it from
@@ -35,6 +35,8 @@ apps/web  /api/ocr        Google Cloud Vision extraction used by the deployed po
         │
         ▼
 apps/web                  Next.js portal: applicant flow, staff review queue, admin, audit log
+                          AI agent: compares lease fields to the application, then
+                          auto-approves, sends to staff review or flags an exception
                           Prisma + Postgres, Supabase storage, Gemini case assistant
 ```
 
