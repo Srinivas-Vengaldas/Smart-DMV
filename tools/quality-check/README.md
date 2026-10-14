@@ -1,6 +1,6 @@
 # Smart-DMV
 
-A simulated DMV processing system. Currently in **Phase 1**, the application focuses on verifying the quality of uploaded applicant lease documents using Computer Vision.
+A simulated DMV processing system. The application focuses on verifying the quality of uploaded applicant lease documents using Computer Vision.
 
 ## How to Run
 
