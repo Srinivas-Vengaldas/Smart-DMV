@@ -110,7 +110,7 @@ with a DMV employee, and every action is recorded in the audit log.
 Resident uploads lease
         │
         ▼
-Quality gate* ─────────► rejected instantly: "image too blurry / too small"
+Quality gate ─────────► rejected instantly: "image too blurry / too small"
         │
         ▼
 OCR extraction (Google Cloud Vision in production; PaddleOCR service as a self-hosted option)
@@ -123,7 +123,7 @@ AI verification agent ─► Auto-approve ──► resident can book an appoint
         └──────────────► Exception ─────► flagged with reason, logged for audit
 ```
 
-\* The quality gate runs in the self-hosted OCR service and the Streamlit checker; the deployed
+The quality gate runs in the self-hosted OCR service and the Streamlit checker; the deployed
 portal sends uploads straight to Google Cloud Vision.
 
 | Layer | Technology |
